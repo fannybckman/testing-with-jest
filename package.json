@@ -13,5 +13,8 @@
     "test"
   ],
   "author": "fanny",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
 }
