@@ -5,7 +5,7 @@ test('')
 test('strlk på stack ökas när man pushat element', () => {
     stack.push("wow");
     stack.push("coolt");
-    expect(stack.size()).toBe(2);
+    expect(stack.size()).toBe(5);
 });
 
 test('strlk på stack minskar när man poppat element', () => {
