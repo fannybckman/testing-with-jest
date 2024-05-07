@@ -8,5 +8,5 @@ test('Ta bort från en tom stack returnerar undefined', () => {
 test('Pop tömmer stacken', () => {
     stack.push(1);
     stack.pop();
-    expect(stack.peek()).toBe(1);
+    expect(stack.peek()).toBeUndefined();
 });
