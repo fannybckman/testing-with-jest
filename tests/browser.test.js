@@ -32,3 +32,19 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+
+test('Peek at stack', async () => {
+    // Klicka på peek-knappen
+    const peekButton = await driver.findElement(By.id('peek'));
+    await peekButton.click();
+    
+    // Vänta till översta elementet visas
+    await driver.wait(until.elementLocated(By.id('top_of_stack')), defaultTimeout);
+    
+    // Hämta texten från översta stack-elementet
+    const stack = await driver.findElement(By.id('top_of_stack')).getText();
+    
+    // Verifiera att det översta elementet är Bananer
+    expect(stack).toBe("tokigt");
+});
