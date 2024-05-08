@@ -46,5 +46,5 @@ test('Peek at stack', async () => {
     const stack = await driver.findElement(By.id('top_of_stack')).getText();
     
     // Verifiera att det översta elementet är Bananer
-    expect(stack).toBe("tokigt");
+    expect(stack).toBe("Bananer");
 });
